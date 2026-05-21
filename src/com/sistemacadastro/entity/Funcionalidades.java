@@ -16,5 +16,23 @@ public class Funcionalidades {
         return opcao;
     }
 
+    public void exibirHospede(String nome, String cpf, String quarto, int diasEstadia, double valorEstadia){
+        System.out.println(
+                                (
+                                        "Nome: %s\n" +
+                                        "CPF: %s\n" +
+                                        "Quarto: %s\n" +
+                                        "Diária: %d\n" +
+                                        "Valor estadia: R$%.2f\n"
+                                ).formatted(
+                                        nome,
+                                        cpf,
+                                        quarto,
+                                        diasEstadia,
+                                        valorEstadia
+                                )
+                        );
+    }
+
 
 }

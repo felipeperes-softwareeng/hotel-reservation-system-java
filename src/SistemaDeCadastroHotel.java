@@ -70,21 +70,14 @@ public class SistemaDeCadastroHotel {
                     System.out.println("Não há hóspedes cadastrados");
                 }else{
                     for (int i = 0; i < contadorDeCadastro; i++) {
-                        System.out.println(
-                                (
-                                                "Nome: %s\n" +
-                                                "CPF: %s\n" +
-                                                "Quarto: %s\n" +
-                                                "Diária: %d\n" +
-                                                "Valor estadia: R$%.2f\n"
-                                ).formatted(
-                                        hospede[i].getNome(),
-                                        hospede[i].getCpf(),
-                                        hospede[i].getQuarto(),
-                                        hospede[i].getNumeroDiarias(),
-                                        hospede[i].getValorDiarias()
-                                )
-                        );
+
+                        funcionalidade.exibirHospede(
+                                hospede[i].getNome(),
+                                hospede[i].getCpf(),
+                                hospede[i].getQuarto(),
+                                hospede[i].getNumeroDiarias(),
+                                hospede[i].getValorDiarias());
+
                         valorTotal += hospede[i].getValorDiarias();
                     }
                     System.out.println("Valor total das estadias: R$%.2f\n".formatted(valorTotal));
@@ -102,22 +95,14 @@ public class SistemaDeCadastroHotel {
                 for (int i = 0; i < contadorDeCadastro; i++) {
 
                     if (hospede[i].getCpf().equals(procurarHospede)){
+
                         System.out.println("\nHóspede encontrado!");
-                        System.out.println(
-                                (
-                                        "Nome: %s\n" +
-                                                "CPF: %s\n" +
-                                                "Quarto: %s\n" +
-                                                "Diária: %d\n" +
-                                                "Valor estadia: R$%.2f\n"
-                                ).formatted(
-                                        hospede[i].getNome(),
-                                        hospede[i].getCpf(),
-                                        hospede[i].getQuarto(),
-                                        hospede[i].getNumeroDiarias(),
-                                        hospede[i].getValorDiarias()
-                                )
-                        );
+                        funcionalidade.exibirHospede(
+                                hospede[i].getNome(),
+                                hospede[i].getCpf(),
+                                hospede[i].getQuarto(),
+                                hospede[i].getNumeroDiarias(),
+                                hospede[i].getValorDiarias());
                         hospedeEncontrado = true;
                     }
 
@@ -161,21 +146,12 @@ public class SistemaDeCadastroHotel {
 
                     for (int i = 0; i < contadorDeCadastro; i++) {
 
-                        System.out.println(
-                                (
-                                        "Nome: %s\n" +
-                                                "CPF: %s\n" +
-                                                "Quarto: %s\n" +
-                                                "Diária: %d\n" +
-                                                "Valor estadia: R$%.2f\n"
-                                ).formatted(
-                                        hospede[i].getNome(),
-                                        hospede[i].getCpf(),
-                                        hospede[i].getQuarto(),
-                                        hospede[i].getNumeroDiarias(),
-                                        hospede[i].getValorDiarias()
-                                )
-                        );
+                        funcionalidade.exibirHospede(
+                                hospede[i].getNome(),
+                                hospede[i].getCpf(),
+                                hospede[i].getQuarto(),
+                                hospede[i].getNumeroDiarias(),
+                                hospede[i].getValorDiarias());
 
                     }
 
