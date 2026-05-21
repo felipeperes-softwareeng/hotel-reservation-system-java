@@ -112,7 +112,7 @@ Classe auxiliar responsável por:
 ## 1. Clone o repositório
 
 ```bash
-git clone https://github.com/felipeperes-student/sistema-controle-de-reserva-hotel.git
+git clone https://github.com/felipeperes-softwareeng/hotel-reservation-system-java.git
 ```
 
 ---
