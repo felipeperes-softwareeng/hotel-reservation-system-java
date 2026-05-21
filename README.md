@@ -135,23 +135,6 @@ SistemaDeCadastroHotel.java
 
 ---
 
-# 📸 Imagens do Projeto
-
-Adicione aqui:
-
-* Print do menu principal
-* Print do cadastro de hóspedes
-* Print da classe Hospede
-* Print da classe Funcionalidades
-
-Exemplo:
-
-```markdown
-![Menu Principal](imagens/menu.png)
-```
-
----
-
 # 📈 Aprendizados
 
 Durante o desenvolvimento desse projeto, pratiquei:
